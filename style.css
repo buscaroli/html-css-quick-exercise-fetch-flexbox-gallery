@@ -1,0 +1,156 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: lightsteelblue;
+}
+
+body {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  width: min(80vw, 1000px);
+  height: 100vh;
+  
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
+  height: 100px;
+  background-color: darkslategrey;
+    color: lightsteelblue;
+}
+
+.logo, .links {
+  padding: 0 20px;
+  font-size: 1.5rem;
+}
+
+.links {
+  
+  font-size: 1.5rem;
+  padding-left: 5px;
+}
+
+.link {
+  display: inline-block;
+  padding-left: 20px;
+}
+
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: start;
+  background-color: lightslategray;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+section {
+  margin: 20px auto;
+}
+
+#section-1 {
+width: min(400px, 30vw);
+
+
+}
+
+#form {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 5px;
+  padding: 5px;
+  border: 2px solid darkslategray;
+  border-radius: 5px;;
+
+}
+
+label, input {
+  padding: 8px;
+  font-size: 1.2rem;
+}
+
+#form-label {
+  text-align: center;
+  
+}
+
+#form-input {
+
+}
+
+#form-btn, #form-input {
+border-style: 2px solid darkslategrey;
+border-radius: 5px;
+
+}
+
+
+#section-2 {
+  width: 100%;
+  /* background-color: lightpink; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  gap: 5px;
+}
+
+
+.card {
+  flex-grow: 1;
+  width: 20%;
+  height: 300px;
+  padding: 5px;
+  border: 2px solid darkslategrey;
+  border-radius: 5px;
+  object-fit: scale-down;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  
+}
+
+@media screen and (max-width: 800px) {
+  .card {
+    width: 48%;
+  }
+}
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color:darkslategrey;
+  color: lightsteelblue;
+}
+
